@@ -1,3 +1,4 @@
+#Ejercicio 1
 > listaDeNumeros<- list(2,5,6,2,1,5,6,10,11,20,15)
 > listaDeNumeros[5]
 [[1]]
@@ -8,7 +9,7 @@ list()
 > listaDeNumeros[14]
 [[1]]
 NULL
-
+#Ejercicio 2
 > list(listaDeNumeros)
 [[1]]
 [[1]][[1]]
@@ -44,7 +45,7 @@ NULL
 [[1]][[11]]
 [1] 15
 
-
+#Ejercicio 3
 > unlist(listaDeNumeros)
 [1]  2  5  6  2  1  5  6 10 11 20 15
 > unlist(listaDeNumeros[5])
@@ -78,6 +79,8 @@ Error: unexpected '}' in "}"
   +     print("se cumple")
   + }
 [1] "se cumple"
+  
+#ejercicio 3
 > listaDeNumeros[5]<-12
 > 12
 [1] 12
@@ -85,9 +88,11 @@ Error: unexpected '}' in "}"
 > listaDeNumeros[5]
 [[1]]
 [1] 12
-
+#ejercicio 4
 > length(listaDeNumeros)
 [1] 11
+
+#ejercicio 5
 > valorinicial <-5
 > valorfinal <-20
 > valorinicial : valorfinal
@@ -100,7 +105,9 @@ Error: unexpected '}' in "}"
 [15]  6  5
 > valorinicial : length(listaDeNumeros)
 [1] 20 19 18 17 16 15 14 13 12 11
-> for(i in 1 : 100){
+
+ #ejercicio 6
+  > for(i in 1 : 100){
   +     print(paste("cuento ",i," misisipis"))
   + }
 [1] "cuento  1  misisipis"
@@ -203,6 +210,8 @@ Error: unexpected '}' in "}"
 [1] "cuento  98  misisipis"
 [1] "cuento  99  misisipis"
 [1] "cuento  100  misisipis"
+  
+ #Ejercicio 7
 > for(i in listaDeNumeros){
   +     print(paste("cuento ",i," misisipis"))
   + }
@@ -217,7 +226,9 @@ Error: unexpected '}' in "}"
 [1] "cuento  11  misisipis"
 [1] "cuento  20  misisipis"
 [1] "cuento  15  misisipis"
-> for(i in listaDeNumeros){
+
+#ejercicio 8  
+  > for(i in listaDeNumeros){
   +     print(i)
   +     if(i%%2==0) {print("par")} else {print("impar")}
   + }
@@ -243,6 +254,8 @@ Error: unexpected '}' in "}"
 [1] "par"
 [1] 15
 [1] "impar"
+  
+#Ejercicio 9  
 > determinar_ganador<-function(total,votosSi,votosNo){
   +     if(votosSi+votosNo>total){
     +         "mala"
@@ -254,21 +267,25 @@ Error: unexpected '}' in "}"
   + }
 > determinar_ganador(100,60,40)
 [1] "si"
-> ##Suma(3,4)
+
+ #Ejercicio 10
+  > ##Suma(3,4)
   > resta <- function(a,b){a-b}
 > resta(3,4)
 [1] -1
-> #correción, arriba era ##resta
+> #correciÃ³n, arriba era ##resta
   > #Suma(3,4)
   > suma <- function(a,b){a+b}
 > suma(3,4)
 [1] 7
-> multiplicación <- function(a,b){a*b}
-> multiplicación(3,4)
+> multiplicaciÃ³n <- function(a,b){a*b}
+> multiplicaciÃ³n(3,4)
 [1] 12
 > Division <- function(a,b){a/b}
 > Division(3,4)
 [1] 0.75
+  
+#ejercicio 11
 > area_rectangulo <- function(b1,h1,b2,h2)
   + {
     +     b1*h1-b2*h2
